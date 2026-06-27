@@ -1,0 +1,9 @@
+bootstrap is an framework 
+
+2 file need to add
+1. css files -> bootstrap.min.css in head
+2. js file -> bootstrap.bundle.min.js (bundle = popper+bootstrap) in body
+
+bootstrap works in 6 screens ->  xxl,xl,lg,md,sm,xs
+
+and there are total 12 parts of table
