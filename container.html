@@ -3,35 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTAINER</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="css/media.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Bootstrap Container Notes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>     
-</body>
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit accusamus mollitia corrupti hic iusto modi dolores id? Reprehenderit nesciunt consectetur nemo optio cupiditate eius nisi soluta doloremque? Explicabo, nemo magni!
-        Asperiores cupiditate quis, sunt non cumque, unde perferendis eum autem doloribus neque laboriosam pariatur blanditiis quaerat voluptates nihil placeat numquam? Hic illum et, cumque ex pariatur quo accusantium nostrum tempore.
-        Hic, error ad amet sit ex assumenda dicta ea voluptatum labore vitae soluta, facere, ipsum rerum natus nihil! Fugiat distinctio nisi possimus dolor deleniti eveniet minima ut enim, similique alias.</p>
+<body class="p-5">
+
+    <h1 class="text-center mb-5">Bootstrap Container & Grid System</h1>
+
+    <!-- Container -->
+    <h3>1. .container</h3>
+
+    <p>
+        The <code>.container</code> class provides a fixed-width responsive container.
+        It leaves space on the left and right side of the page.
+    </p>
+
+    <div class="container border border-2 border-primary p-3 mb-5">
+        <h5>Container Example</h5>
+        <p>
+            This content is inside a <code>.container</code>.
+            Resize the browser window to see how its width changes.
+        </p>
     </div>
-    <div class="container-fluid">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit accusamus mollitia corrupti hic iusto modi dolores id? Reprehenderit nesciunt consectetur nemo optio cupiditate eius nisi soluta doloremque? Explicabo, nemo magni!
-        Asperiores cupiditate quis, sunt non cumque, unde perferendis eum autem doloribus neque laboriosam pariatur blanditiis quaerat voluptates nihil placeat numquam? Hic illum et, cumque ex pariatur quo accusantium nostrum tempore.
-        Hic, error ad amet sit ex assumenda dicta ea voluptatum labore vitae soluta, facere, ipsum rerum natus nihil! Fugiat distinctio nisi possimus dolor deleniti eveniet minima ut enim, similique alias.</p>
+
+
+    <!-- Container Fluid -->
+    <h3>2. .container-fluid</h3>
+
+    <p>
+        The <code>.container-fluid</code> class always takes 100% width of the screen.
+    </p>
+
+    <div class="container-fluid bg-warning p-3 mb-5">
+        <h5>Container Fluid Example</h5>
+        <p>
+            This container occupies the full width of the browser.
+        </p>
     </div>
-    <div class="container-fluid">
+
+
+    <!-- Row -->
+    <h3>3. .row</h3>
+
+    <p>
+        A <code>.row</code> is used to hold Bootstrap columns.
+    </p>
+
+    <div class="container border p-3 mb-5">
         <div class="row">
-            <div class="col-4 bg-warning">.</div>
-            <div class="col-4 bg-danger">.</div>
-            <div class="col-4 bg-warning">.</div>
+            <div class="col bg-success text-white p-3">
+                This is inside a Row.
+            </div>
         </div>
     </div>
-    <br>
-    <div class="row">
-            <div class="col-12 bg-warning">.</div>
+
+
+    <!-- Columns -->
+    <h3>4. .col-4</h3>
+
+    <p>
+        Bootstrap has a 12-column grid system.
+        Here each column occupies <code>4/12</code> of the row.
+    </p>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-4 bg-primary text-white p-3">
+                col-4
+            </div>
+
+            <div class="col-4 bg-danger text-white p-3">
+                col-4
+            </div>
+
+            <div class="col-4 bg-success text-white p-3">
+                col-4
+            </div>
+        </div>
     </div>
-     
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+    <!-- Full Width Column -->
+    <h3>5. .col-12</h3>
+
+    <p>
+        <code>.col-12</code> occupies the entire width of the row.
+    </p>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 bg-info text-dark p-3">
+                col-12 (100% Width)
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Half Width -->
+    <h3>6. Two Equal Columns (.col-6)</h3>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-6 bg-secondary text-white p-3">
+                col-6
+            </div>
+
+            <div class="col-6 bg-dark text-white p-3">
+                col-6
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Four Equal Columns -->
+    <h3>7. Four Equal Columns (.col-3)</h3>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-3 bg-warning p-3">col-3</div>
+            <div class="col-3 bg-danger text-white p-3">col-3</div>
+            <div class="col-3 bg-success text-white p-3">col-3</div>
+            <div class="col-3 bg-primary text-white p-3">col-3</div>
+        </div>
+    </div>
+
+</body>
 </html>
