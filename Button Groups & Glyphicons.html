@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Dropdowns & Icons</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="container mt-5">
+
+    <h1 class="mb-4">Bootstrap Dropdowns & Icons</h1>
+
+    <p>
+        Bootstrap provides dropdown components to create menus inside buttons.
+        Bootstrap 5 also provides Bootstrap Icons for adding beautiful icons to
+        buttons, forms, navigation bars, alerts and many other components.
+    </p>
+
+    <hr>
+
+    <!-- Nesting Button Groups -->
+
+    <h3>1. Nesting Button Groups & Dropdown Menus</h3>
+
+    <p>
+        A nested button group means placing one
+        <code>btn-group</code> inside another
+        <code>btn-group</code>. It is mainly used to create
+        dropdown menus inside a button group.
+    </p>
+
+    <div class="btn-group">
+        <button class="btn btn-primary">APPLE</button>
+        <button class="btn btn-success">SAMSUNG</button>
+        <div class="btn-group">
+            <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">SONY</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="#">TABLET</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">TABLET</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">TABLET</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="mt-3">
+        <strong>Explanation:</strong>
+        Apple and Samsung are normal buttons. Sony contains a dropdown menu
+        because another <code>btn-group</code> is nested inside the main button
+        group.
+    </p>
+
+    <hr>
+
+    <!-- Split Button Dropdown -->
+
+    <h3>2. Split Button Dropdown</h3>
+
+    <p>
+        A Split Button Dropdown separates the main action button from
+        the dropdown button. Clicking the main button performs the
+        default action while clicking the arrow opens the dropdown menu.
+    </p>
+
+    <div class="btn-group">
+        <button class="btn btn-success">SONY</button>
+        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"></button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#" class="dropdown-item">HEADPHONE</a>
+            </li>
+             <li>
+                <a href="#" class="dropdown-item">MOBILE</a>
+            </li>
+             <li>
+                <a href="#" class="dropdown-item">TV</a>
+            </li>
+        </ul>
+    </div>
+
+    <p class="mt-3">
+        <strong>Explanation:</strong>
+        Clicking the Sony button performs the main action.
+        Clicking the arrow button displays additional options.
+    </p>
+
+    <hr>
+
+    <!-- Bootstrap Icons -->
+
+    <h3>3. Bootstrap Icons</h3>
+
+    <p>
+        Bootstrap Icons are a collection of free SVG icons that can be
+        used inside buttons, forms, navigation bars and many other
+        Bootstrap components.
+    </p>
+
+    <button class="btn btn-primary">
+        <i class="bi bi-search"></i>
+        Search
+    </button>
+
+    <button class="btn btn-success">
+        <i class="bi bi-download"></i>
+        Download
+    </button>
+
+    <button class="btn btn-danger btn-lg">
+        <i class="bi bi-trash"></i>
+        DELETE
+    </button>
+
+    <button class="btn btn-danger">
+        <i class="bi bi-trash"></i>
+        Delete
+    </button>
+
+    <button class="btn btn-warning">
+        <i class="bi bi-house-door-fill"></i>
+        Home
+    </button>
+
+    <button class="btn btn-info">
+        <i class="bi bi-person-fill"></i>
+        Profile
+    </button>
+
+    <hr>
+
+    <h4>Syntax</h4>
+
+<pre>
+&lt;i class="bi bi-search"&gt;&lt;/i&gt;
+&lt;i class="bi bi-download"&gt;&lt;/i&gt;
+&lt;i class="bi bi-trash"&gt;&lt;/i&gt;
+&lt;i class="bi bi-person-fill"&gt;&lt;/i&gt;
+</pre>
+
+    <p>
+        <strong>Explanation:</strong>
+        The first class <code>bi</code> enables Bootstrap Icons and the
+        second class specifies the icon name.
+    </p>
+
+    <hr>
+
+    <!-- Common Bootstrap Icons -->
+
+    <h3>4. Common Bootstrap Icons</h3>
+
+    <table class="table table-bordered">
+
+        <thead class="table-dark">
+            <tr>
+                <th>Icon</th>
+                <th>Class</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td><i class="bi bi-search"></i></td>
+                <td>bi-search</td>
+                <td>Search</td>
+            </tr>
+
+            <tr>
+                <td><i class="bi bi-house-door-fill"></i></td>
+                <td>bi-house-door-fill</td>
+                <td>Home</td>
+            </tr>
+
+            <tr>
+                <td><i class="bi bi-person-fill"></i></td>
+                <td>bi-person-fill</td>
+                <td>User</td>
+            </tr>
+
+            <tr>
+                <td><i class="bi bi-download"></i></td>
+                <td>bi-download</td>
+                <td>Download</td>
+            </tr>
+
+            <tr>
+                <td><i class="bi bi-trash"></i></td>
+                <td>bi-trash</td>
+                <td>Delete</td>
+            </tr>
+
+            <tr>
+                <td><i class="bi bi-envelope-fill"></i></td>
+                <td>bi-envelope-fill</td>
+                <td>Email</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <!-- Quick Notes -->
+
+    <h3>Quick Notes</h3>
+
+    <ul>
+
+        <li><code>btn-group</code> groups multiple buttons together.</li>
+
+        <li>Nested <code>btn-group</code> creates a dropdown inside another button group.</li>
+
+        <li><code>dropdown-toggle</code> creates a dropdown button.</li>
+
+        <li><code>dropdown-toggle-split</code> creates a split dropdown button.</li>
+
+        <li><code>dropdown-menu</code> stores dropdown items.</li>
+
+        <li>Bootstrap 5 uses <strong>Bootstrap Icons</strong>.</li>
+
+        <li>Add Bootstrap Icons using the <code>&lt;i&gt;</code> tag.</li>
+
+        <li>Always include the Bootstrap Icons CDN before using icons.</li>
+
+        <li>Bootstrap 3 used <strong>Glyphicons</strong>, but they were removed in Bootstrap 4 and Bootstrap 5.</li>
+
+    </ul>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
